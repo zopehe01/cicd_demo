@@ -7,10 +7,10 @@ on:
 jobs:
   execute-test:
     runs-on: ubuntu-latest
-    - name: setup java
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'zulu'
-        java-version: '11'
-    - run: java --version
-        
+    steps:
+      - name: setup java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '11'
+      - run: java --version  
