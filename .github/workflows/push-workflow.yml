@@ -4,8 +4,10 @@ on:
     branches:
       - main
 jobs:
+  
   Job1:
     runs-on: ubuntu-latest
+    
     steps:
       - name: setup java
         uses: actions/setup-java@v3
