@@ -1,9 +1,8 @@
 name: Push Workflow
-
 on:
   push:
-    branches: ["main"]
-
+    branches:
+      - main
 jobs:
   execute-test:
     runs-on: ubuntu-latest
@@ -11,6 +10,6 @@ jobs:
       - name: setup java
         uses: actions/setup-java@v3
         with:
-          distribution: 'zulu'
-          java-version: '11'
-      - run: java --version  
+          distribution: zulu
+          java-version: "11"
+      - run: java --version
