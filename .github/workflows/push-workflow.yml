@@ -4,8 +4,8 @@ on:
     branches:
       - main
 jobs:
-  
-  Job1:
+
+  job1:
     runs-on: ubuntu-latest
     
     steps:
